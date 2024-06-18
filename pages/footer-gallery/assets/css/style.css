@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  section {
+    width: 100vw;
+    padding: 1rem 5vw;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+  }
+
+  section.design-one {
+    display: flex;
+    background: linear-gradient(75deg , rgb(233, 35, 190) 0%, #ffebf4 100% );
+    align-items: flex-start;
+
+    & .company-logo {
+        height: 50px;
+        margin-top: 20px;
+    }
+
+    & .social-media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        gap: .5rem;
+        height: 100%;
+
+        & i {
+            padding: .5rem;
+            border: 1px solid black;
+            border-radius: 50%;
+            height: 2.2rem;
+            width: 2.2rem;
+            transition: all .2s ease;
+        }
+    }
+
+    & .content {
+        padding-right: 20rem;
+        padding: 20px;
+    }
+
+    & .disclaimer {
+        font-size: .8rem;
+        width: 5vw;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+  }
+  
+  /* Nested Specific Class */
+  .design-two {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 0.7rem 10vw;
+    align-items: center;
+    background: rgb(255, 254, 177);
+  
+    & > .navigation {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+  
+      & > .navigation-content {
+        color: rgb(0, 0, 0);
+        font-weight: 800;
+        font-size: 1.2rem;
+      }
+  
+      & > .call-to-action {
+        border: 3px rgb(69, 51, 21) solid;
+        padding: 0.5rem 1rem;
+        border-radius: 19px;
+        color:rgb(255, 213, 0)
+        
+      }
+    }
+  }
+  
+  /* Non-Nested Non-Specific Class */
+  .design-three {
+    display: flex;
+    background-color: rgb(217, 255, 177);
+    align-items: flex-end;
+    width: calc(100% - 1rem);
+    justify-content: center;
+    padding: 0.7rem 14vw;
+    border-radius: 5px;
+  }
+  
+  .design-three .navigation {
+    display: flex;
+
+    gap: 5rem;
+    align-items: center;
+  }
+  
+  .design-three .navigation .nav-button {
+    font-weight: 400;
+    font-size: 1.1rem;
+    border: 3px rgb(154, 232, 121) solid;
+    padding: 0.5rem 1rem;
+    border-radius: 19px;
+    color:rgb(10, 128, 23)
+    
+  }
+  
+  .design-three .navigation .bi {
+    font-size: 2.5rem;
+  }
+  
+  .company-logo {
+    height: 50px;
+  
+  }
+  
+  /* Nested Non-Specific Class */
+  .design-four {
+    display: flex;
+    padding: 2px;
+    width:calc(100% - 1rem);
+    align-items: center;
+    background: #e0aaff;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+  
+    & .company-logo {
+      height: 85px;
+    }
+  
+    & .navigation {
+      align-items: center;
+      display: flex;
+      gap: 2rem;
+      color: rgb(0, 0, 0);
+    }
+    & .glyphicon-glyphicon-envelope {
+        color: rgb(255, 255, 255);
+    }
+    & .navigation-content {
+      color: black;
+      font-weight: 700;
+      font-size: 1.2rem;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+  }
+  
+  .design-five {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 10vw;
+    background:  hwb(221 73% 0%);
+  
+    & > img.company-logo {
+      height: 70px;
+    }
+
+    & .navigation-5 {
+        display: flex;
+        width: 10vw;
+        gap: 4rem;
+        color: rgb(255, 255, 255);
+    }
+      & > a.navigation-content {
+       
+        color: rgb(255, 255, 255);
+    }
+}
+  /* Design with animation */
+  a {
+    text-decoration: none;
+}
+
+/* Dev */
+section.design-one,
+section.design-one * {
+    /* outline: 1px dashed black; */
+}
+
+/* Dep */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+section {
+    width: 100vw;
+    padding: 1rem 5vw;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+section.design-one,
+section.design-one * {
+    /* outline: 1px dashed black; */
+}
+
+/* Dep */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+section {
+    width: 100vw;
+    padding: 1rem 5vw;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+section.design-one {
+    display: flex;
+    background: linear-gradient(75deg , rgb(159, 255, 159) 0%, rgb(219, 255, 219) 100% );
+    align-items: flex-start;
+
+    & .company-logo {
+        height: 50px;
+        margin-top: 20px;
+    }
+
+    & .social-media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        gap: .5rem;
+        height: 100%;
+
+        & i {
+            padding: .5rem;
+            border: 1px solid black;
+            border-radius: 50%;
+            height: 2.2rem;
+            width: 2.2rem;
+            transition: all .2s ease;
+        }
+    }
+
+    & .content {
+        padding-right: 20rem;
+        padding: 20px;
+    }
+
+    & .disclaimer {
+        font-size: .8rem;
+        width: 5vw;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+
+  }
+  
