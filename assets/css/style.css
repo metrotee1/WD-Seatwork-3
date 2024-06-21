@@ -1,34 +1,47 @@
+/* assets/css/style.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up global styles */
 html, body {
     height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: 'Poppins', sans-serif;
-    background-image: url('../images/bg.jpg');
+    background-image: url('../img/bg.jpg'); /* Replace with your background image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative; /* Ensure relative positioning for absolute children */
 }
 
+/* Position logo2.png at the top left corner */
 .top-left-logo {
     position: absolute;
     top: 20px;
     left: 20px;
 }
 
+/* Ensure container is centered and styled */
 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+/* Style the header section */
+.header {
     text-align: center;
     max-width: 600px;
-    padding: 20px;
-    box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.header {
-    margin-bottom: 40px;
+    padding: 20px;
 }
 
 .logo {
@@ -38,7 +51,7 @@ html, body {
 }
 
 .logo2 {
-    max-width: 100px;
+    max-width: 100px; /* Adjust size as needed */
     height: auto;
 }
 
@@ -53,6 +66,7 @@ html, body {
     margin-bottom: 20px;
 }
 
+/* Style navigation buttons */
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -63,11 +77,11 @@ html, body {
     transition: background-color 0.3s ease;
 }
 
-.ghost {
+.H {
     background-color: #000000;
 }
 
-.poison {
+.P {
     background-color: #000000;
 }
 

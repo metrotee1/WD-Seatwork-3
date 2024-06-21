@@ -1,292 +1,379 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: fit-content;
-    width: 100vw;
-    overflow-x: hidden;
-  }
-  
-  section {
-    width: 100vw;
-    padding: 1rem 5vw;
-    display: flex;
-    gap: 1rem;
-    align-items: flex-end;
-  }
-
-  section.design-one {
-    display: flex;
-    background: linear-gradient(75deg , rgb(233, 35, 190) 0%, #ffebf4 100% );
-    align-items: flex-start;
-
-    & .company-logo {
-        height: 50px;
-        margin-top: 20px;
-    }
-
-    & .social-media {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        gap: .5rem;
-        height: 100%;
-
-        & i {
-            padding: .5rem;
-            border: 1px solid black;
-            border-radius: 50%;
-            height: 2.2rem;
-            width: 2.2rem;
-            transition: all .2s ease;
-        }
-    }
-
-    & .content {
-        padding-right: 20rem;
-        padding: 20px;
-    }
-
-    & .disclaimer {
-        font-size: .8rem;
-        width: 5vw;
-        display: flex;
-        align-items: center;
-        height: 100%;
-    }
-
-  }
-  
-  /* Nested Specific Class */
-  .design-two {
-    display: flex;
-    width: 100vw;
-    justify-content: space-between;
-    padding: 0.7rem 10vw;
-    align-items: center;
-    background: rgb(255, 254, 177);
-  
-    & > .navigation {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-  
-      & > .navigation-content {
-        color: rgb(0, 0, 0);
-        font-weight: 800;
-        font-size: 1.2rem;
-      }
-  
-      & > .call-to-action {
-        border: 3px rgb(69, 51, 21) solid;
-        padding: 0.5rem 1rem;
-        border-radius: 19px;
-        color:rgb(255, 213, 0)
-        
-      }
-    }
-  }
-  
-  /* Non-Nested Non-Specific Class */
-  .design-three {
-    display: flex;
-    background-color: rgb(217, 255, 177);
-    align-items: flex-end;
-    width: calc(100% - 1rem);
-    justify-content: center;
-    padding: 0.7rem 14vw;
-    border-radius: 5px;
-  }
-  
-  .design-three .navigation {
-    display: flex;
-
-    gap: 5rem;
-    align-items: center;
-  }
-  
-  .design-three .navigation .nav-button {
-    font-weight: 400;
-    font-size: 1.1rem;
-    border: 3px rgb(154, 232, 121) solid;
-    padding: 0.5rem 1rem;
-    border-radius: 19px;
-    color:rgb(10, 128, 23)
-    
-  }
-  
-  .design-three .navigation .bi {
-    font-size: 2.5rem;
-  }
-  
-  .company-logo {
-    height: 50px;
-  
-  }
-  
-  /* Nested Non-Specific Class */
-  .design-four {
-    display: flex;
-    padding: 2px;
-    width:calc(100% - 1rem);
-    align-items: center;
-    background: #e0aaff;
-    justify-content: center;
-    color: white;
-    font-size: 30px;
-  
-    & .company-logo {
-      height: 85px;
-    }
-  
-    & .navigation {
-      align-items: center;
-      display: flex;
-      gap: 2rem;
-      color: rgb(0, 0, 0);
-    }
-    & .glyphicon-glyphicon-envelope {
-        color: rgb(255, 255, 255);
-    }
-    & .navigation-content {
-      color: black;
-      font-weight: 700;
-      font-size: 1.2rem;
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    }
-  }
-  
-  .design-five {
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.7rem 10vw;
-    background:  hwb(221 73% 0%);
-  
-    & > img.company-logo {
-      height: 70px;
-    }
-
-    & .navigation-5 {
-        display: flex;
-        width: 10vw;
-        gap: 4rem;
-        color: rgb(255, 255, 255);
-    }
-      & > a.navigation-content {
-       
-        color: rgb(255, 255, 255);
-    }
-}
-  /* Design with animation */
-  a {
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-/* Dev */
-section.design-one,
-section.design-one * {
-    /* outline: 1px dashed black; */
+a {
+  text-decoration: none;
 }
-
-/* Dep */
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 200vh;
-    width: 100vw;
-    overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200vh;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 section {
-    width: 100vw;
-    padding: 1rem 5vw;
-    display: flex;
-    gap: 1rem;
-    align-items: flex-end;
-}
-
-section.design-one,
-section.design-one * {
-    /* outline: 1px dashed black; */
-}
-
-/* Dep */
-
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 200vh;
-    width: 100vw;
-    overflow-x: hidden;
-}
-
-section {
-    width: 100vw;
-    padding: 1rem 5vw;
-    display: flex;
-    gap: 1rem;
-    align-items: flex-end;
+  width: 100vw;
+  padding: 1rem 5vw;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
 }
 
 section.design-one {
-    display: flex;
-    background: linear-gradient(75deg , rgb(159, 255, 159) 0%, rgb(219, 255, 219) 100% );
-    align-items: flex-start;
+  display: flex;
+  background: linear-gradient(75deg, rgb(17, 226, 146) 0%, #ffebf4 100%);
+  align-items: flex-start;
+}
 
-    & .company-logo {
-        height: 50px;
-        margin-top: 20px;
-    }
+section.design-one .company-logo {
+  height: 50px;
+  margin-top: 20px;
+}
 
-    & .social-media {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        gap: .5rem;
-        height: 100%;
+section.design-one .social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 0.5rem;
+}
 
-        & i {
-            padding: .5rem;
-            border: 1px solid black;
-            border-radius: 50%;
-            height: 2.2rem;
-            width: 2.2rem;
-            transition: all .2s ease;
-        }
-    }
+section.design-one .social-media i {
+  padding: 0.5rem;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 100%;
+  height: 2.7rem;
+  width: 2.7rem;
+  transition: all 0.2s ease;
+}
 
-    & .content {
-        padding-right: 20rem;
-        padding: 20px;
-    }
+section.design-one .content {
+  padding-right: 20rem;
+  padding: 20px;
+}
 
-    & .disclaimer {
-        font-size: .8rem;
-        width: 5vw;
-        display: flex;
-        align-items: center;
-        height: 100%;
-    }
+section.design-one .disclaimer {
+  font-size: 0.8rem;
+  width: 5vw;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
 
+.design-two {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  padding: 0.7rem 10vw;
+  align-items: center;
+  background: rgb(15, 173, 36);
+}
 
-  }
-  
+.design-two .navigation {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.design-two .navigation .navigation-content {
+  color: rgb(238, 234, 16);
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.design-two .navigation .call-to-action {
+  border: 3px rgb(255, 255, 255) solid;
+  padding: 0.5rem 1rem;
+  border-radius: 19px;
+  color: rgb(255, 213, 3);
+}
+
+.design-three {
+  display: flex;
+  background-color: rgb(69, 116, 20);
+  align-items: flex-end;
+  width: calc(100% - 1rem);
+  justify-content: center;
+  padding: 0.7rem 14vw;
+  border-radius: 5px;
+}
+
+.design-three .navigation {
+  display: flex;
+  gap: 4.5rem;
+  align-items: center;
+}
+
+.design-three .navigation .nav-button {
+  font-weight: 400;
+  font-size: 1.1rem;
+  border: 3px rgb(156, 243, 118) solid;
+  padding: 0.5rem 1rem;
+  border-radius: 19px;
+  color: rgb(255, 255, 255);
+}
+
+.design-three .navigation .bi {
+  font-size: 2.5rem;
+}
+
+.company-logo {
+  height: 100px;
+}
+
+.design-four {
+  display: flex;
+  padding: 2px;
+  width: calc(100% - 1rem);
+  align-items: center;
+  background: #7dd894;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+
+.design-four .company-logo {
+  height: 70px;
+}
+
+.design-four .navigation {
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  color: rgb(0, 0, 0);
+}
+
+.design-four .glyphicon-user {
+  color: rgb(21, 71, 38);
+}
+
+.design-four .navigation-content {
+  color: rgb(5, 4, 4);
+  font-weight: 700;
+  font-size: 1.2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.design-five {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 10vw;
+  background: hwb(172 4% 47%);
+}
+
+.design-five > img.company-logo {
+  height: 70px;
+}
+
+.design-five .navigation-5 {
+  display: flex;
+  width: 10vw;
+  gap: 4rem;
+  color: rgb(255, 255, 255);
+}
+
+.design-five > a.navigation-content {
+  color: rgb(255, 255, 255);
+}
+
+.design-two-animation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 10%;
+  background-color: #175a3a;
+}
+
+.design-two-animation .pop-up {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.design-two-animation .company-logo {
+  height: 60px;
+  transition: transform 0.3s ease;
+}
+
+.design-two-animation .popup-text {
+  color: transparent;
+  transform: translateX(-5rem);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.design-two-animation:hover .company-logo {
+  transform: rotate(360deg);
+}
+
+.design-two-animation:hover .popup-text {
+  color: #0dd12e;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.design-two-animation .navigation {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.design-two-animation .navigation-content {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: rgba(9, 107, 34, 0.812);
+  transition: 0.2s ease;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 18px;
+}
+
+.design-two-animation .navigation-content:hover {
+  background: rgb(10, 1, 1);
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 5px 0px 0px rgb(125, 168, 116);
+  border: 1px rgba(0, 252, 55, 0.993) solid;
+}
+
+.design-three-animation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem 10%;
+  background-color: #1bd615;
+}
+
+.design-three-animation .company-logo {
+  height: 80px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.design-three-animation .navigation {
+  display: flex;
+  gap: 2rem;
+}
+
+.design-three-animation .navigation-content {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #1f5207;
+  transition: all 0.3s ease;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.design-three-animation .navigation-content:before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.design-three-animation .navigation-content:hover:before {
+  width: 100%;
+  background-color: #1f5207;
+}
+
+.design-four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 10%;
+  background-color: #032714;
+  border-radius: 10px;
+}
+
+.design-four .company-logo {
+  height: 120px;
+  transition: transform 0.3s ease;
+}
+
+.design-four .company-logo:hover {
+  transform: scale(1.1);
+}
+
+.design-four .navigation {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.design-four .navigation a {
+  display: inline-block;
+  position: relative;
+  font-size: 2.5rem;
+  color: #d3dcdf;
+  transition: transform 0.3s ease;
+}
+
+.design-four .navigation a:hover {
+  transform: translateY(-5px);
+}
+
+.design-five-animation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem 10%;
+  background-color: #4b7550;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.design-five-animation .company-logo {
+  height: 100px;
+  transition: transform 0.3s ease;
+}
+
+.design-five-animation .name {
+  color: #08ee68;
+  transform: translateY(20px) scale(0);
+  transition: all ease 0.3s;
+}
+
+.design-five-animation:hover .name {
+  transform: translateY(0) scale(1);
+}
+
+.design-five-animation .navigation {
+  display: flex;
+  gap: 4rem;
+}
+
+.design-five-animation .navigation-content {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #d3dcdf;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.design-five-animation .navigation-content:before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.design-five-animation .navigation-content:hover:before {
+  width: 100%;
+  background-color: #d3dcdf;
+}
